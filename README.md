@@ -2,7 +2,6 @@
 # Brain Tumor Classification using Deep Learning based on Convolutional Neural Network (CNN)
 
 <div align="center">
-  <br/>
   <img src="https://i.giphy.com/Vn9JVHDAzYw1O.webp" alt="logo" width="128" height="128">
   <br/>
 </div>
