@@ -9,3 +9,4 @@ The dataset used in this project: [Brain Tumor MRI Dataset](https://www.kaggle.c
 
 
 ## Demo
+![brain_tumor_demo](https://github.com/notayush000/Brain-Tumor-Classifier-using-Deep-Learning/assets/58353326/dfeb2781-657e-48a1-903f-0eef9085cd5f)
