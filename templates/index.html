@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Brain Tumor Classifier</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            Brain Tumor Classification
+        </nav>
+    </header>
+
+    <body>
+        <div class="container">
+            <div>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <P>
+                            {% for message in messages %}
+                                <p class="flash-message" id="flash-message" onclick="onMessageClickHandler()">{{ message }}</p>
+                            {% endfor %}
+                        </P>
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <form method="post" action="/"  enctype="multipart/form-data" class="upload-container">
+                <h2>Upload MRI</h2>
+                <input type="file" name="file" id="file" required>
+                <input type="submit" value="Upload" class="upload-btn">
+            </form>
+            <div class="result-container">
+                <div class="result-bar">
+                    <h2 class="img">Image</h2>  
+                    <h2 class="pred">Prediction</h2>
+                </div>
+                <hr>
+                <div class="result-area">
+                    <div class="uploaded-img" id="uploaded-img">
+                        {% if filename %}
+                            <img src="{{ url_for('display_image', filename=filename) }}" alt="">
+                        {% endif %}
+                    </div>
+                    <div class="model-predicted">
+                        {% if prediction %}
+                            {{ prediction }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const onMessageClickHandler = () => {
+            const pTag = document.getElementById("flash-message")
+            pTag.style.display = "none"
+        }
+    </script>
+</body>
+</html>
