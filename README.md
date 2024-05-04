@@ -2,7 +2,9 @@
 # Brain Tumor Classification using Deep Learning based on Convolutional Neural Network (CNN)
 
 <div align="center">
+  <br/>
   <img src="https://i.giphy.com/Vn9JVHDAzYw1O.webp" alt="logo" width="128" height="128">
+  <br/>
 </div>
 
 Intracranial neoplasms, commonly referred to as brain tumors, are a collection of abnormal cells that forms within the brain. These cells reproduce at an alarming rate, which can increase pressure inside the skull and damage nearby brain tissue. A 2022 study revealed a significant increase (around 94%) in brain cancers between 1990 and 2019. Over 300,000 cases of brain tumors are reported annually worldwide. MRI (Magnetic resonance imaging) is often the preferred choice for diagnosing brain tumors. 
